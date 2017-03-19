@@ -1,18 +1,17 @@
 {
   "name": "test",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "author": "",
-  "license": "ISC",
   "dependencies": {
     "jasmine-core": "^2.5.2",
     "karma": "^1.4.1",
     "karma-chrome-launcher": "^2.0.0",
     "karma-jasmine": "^1.1.0",
-    "karma-proxy-plugin": "^0.0.2"
+    "karma-proxy-plugin": "file:.."
+  },
+  "license": "MIT",
+  "main": "index.js",
+  "scripts": {
+    "karma": "karma start --singleRun",
+    "test": "npm rm karma-proxy-plugin && npm i --production && npm run karma"
   }
 }
