@@ -4,13 +4,14 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cd test && npm test"
   },
   "author": "@kyo_ago",
   "license": "MIT",
   "devDependencies": {
     "karma": "^1.4.1",
     "karma-mocha": "^1.3.0",
-    "karma-phantomjs-launcher": "^1.0.2"
+    "karma-phantomjs-launcher": "^1.0.2",
+    "mocha": "^3.2.0"
   }
 }
